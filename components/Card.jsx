@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React from "react"
 
 export default function Card(props) {
@@ -9,7 +11,7 @@ export default function Card(props) {
     }
     
     return (
-        <div className="card">
+    <div className="card">
             {
                 badgeText && 
                 <div className="card--badge">{badgeText}</div>
@@ -26,8 +28,8 @@ export default function Card(props) {
             </div>
             <p className="card--title">{props.title}</p>
             <p className="card--price">
-                <span className="bold">From ${props.price}</span> / person
+            <span className="bold">From ${props.price}</span> / person
             </p>
-        </div>
+    </div>
     )
 }

@@ -13,6 +13,9 @@ nav {
     padding: 20px 36px;
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
+.nav--logo {
+    max-width: 100px;
+}
 
 .bold {
     font-weight: bold;
@@ -20,14 +23,13 @@ nav {
 
 .gray {
     color: #918E9B;
+
 }
 
-.nav--logo {
-    max-width: 100px;
-}
 
 section {
     padding: 20px;
+    align-items: center;
 }
 
 .hero {
@@ -36,8 +38,7 @@ section {
 }
 
 .hero--photo {
-    max-width: 400px;
-    align-self: center;
+    max-width: 500px;    
 }
 
 .hero--header {
@@ -53,6 +54,7 @@ section {
     flex-wrap: nowrap;
     gap: 20px;
     overflow-x: auto;
+    justify-content: center;
 }
 
 .card {
@@ -66,19 +68,23 @@ section {
 
 .card--image {
     width: 100%;
+    max-height: auto;
     border-radius: 9px;
     margin-bottom: 9px;
+    justify-content: top;
+
 }
 
 /* ADD */
 .card--title {
     overflow: hidden;
     text-overflow: ellipsis;
+    height:30px;
 }
-
 .card--stats {
     display: flex;
     align-items: center;
+    gap:2px;
 }
 
 .card--star {
@@ -94,7 +100,7 @@ section {
     position: absolute;
     top: 6px;
     left: 6px;
-    background-color: white;
+    background-color: rgb(226, 226, 226);
     padding: 5px 7px;
     border-radius: 2px;
     font-weight: bold;
